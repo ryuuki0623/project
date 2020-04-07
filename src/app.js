@@ -81,7 +81,7 @@ app.use("/siswa",  authMid.login, authMid.cekType, siswaRoutes)
 app.use("/guru",  authMid.login, authMid.cekType, guruRoutes)
 
 app.get("/", authMid.gkLogin, (req, res)=>{
-  res.cookie('david', 12345, cookieConfig);
+  //res.cookie('david', 12345, cookieConfig);
   res.status(200).json({
     pesan: "Hello World"
   })
