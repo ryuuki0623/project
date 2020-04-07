@@ -1,0 +1,40 @@
+{
+  "name": "evaluasi",
+  "version": "1.0.0",
+  "description": "project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olqlinzky/evaluasi.git"
+  },
+  "author": "olqlinzky",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-flash": "0.0.2",
+    "express-session": "^1.16.2",
+    "helmet": "^3.21.3",
+    "mysql": "^2.18.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-one-session-per-user": "^1.0.3",
+    "ps-node": "^0.1.6"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olqlinzky/evaluasi/issues"
+  },
+  "homepage": "https://github.com/olqlinzky/evaluasi#readme",
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.2"
+  }
+}
