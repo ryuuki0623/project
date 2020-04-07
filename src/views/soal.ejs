@@ -1,0 +1,20 @@
+<form action="" method="post">  
+<% data.forEach(hasil => {%>    
+           <label><%= hasil.pertanyaan %></label> 
+            <br><br>      
+                <input type="radio" name="<%= hasil.id_m + hasil.id_s %>" 
+                id="<%= hasil.id_m + hasil.id_s %>" value="a"><%= hasil.a %><br>
+    
+                <input type="radio" name="<%= hasil.id_m + hasil.id_s %>" 
+                id="<%= hasil.id_m + hasil.id_s %>" value="b"><%= hasil.b %><br>
+    
+                <input type="radio" name="<%= hasil.id_m + hasil.id_s %>" 
+                id="<%= hasil.id_m + hasil.id_s %>" value="c"><%= hasil.c %><br>
+                
+                <input type="radio" name="<%= hasil.id_m + hasil.id_s %>" 
+                id="<%= hasil.id_m + hasil.id_s %>" value="d"><%= hasil.d %><br>  
+ <% }) %>
+            <br>
+            <input type="submit" value="Selesai">
+        </form>
+    

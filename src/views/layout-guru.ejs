@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <title>Guru Page</title>
+</head>
+<body>
+    <%- body %> 
+    <script>
+        const checkCookie = function() {
+            const lastCookie = document.cookie; // 'static' memory between function calls
+            return function() {
+                const currentCookie = document.cookie;
+                if (currentCookie != lastCookie) {
+                    // something useful like parse cookie, run a callback fn, etc.
+                    lastCookie = currentCookie; // store latest cookie
+                }
+            };
+            }();
+
+            window.setInterval(checkCookie, 100); // run every 100 ms
+    </script>
+</body>
+</html>

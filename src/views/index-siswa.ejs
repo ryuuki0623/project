@@ -1,0 +1,20 @@
+<h1>Halo <%= hasil.nama %></h1>
+<p>Nis Anda  : <%= hasil.nis %> </p> <span><a href="/siswa/detail">detail</a></span>
+<% if(!status){ %> 
+    <p>Status Ujian : Tidak Ada Ujian </p>
+<% }else{ %> 
+    <p>Status Ujian : Ada Ujian  </p> <span><a href="/siswa/ujian">Ujian Sekarang</a></span>
+<% } %> 
+<hr>
+<h3>Riwayat Ujian</h3>
+<% if(!history){ %> 
+<p>Tidak Ada</p>
+<% }else{ %> 
+    <% history.forEach(h => {%> 
+        <p>Mata Pelajaran : <%= h.id_m %> </p>
+        <p>Tanggal : <%= tgl_soal %> </p>
+        <p>Jumlah Benar : <%= h.nb %> </p>
+        <p>Jumlah Salah : <%= h.ns %> </p>
+    <% }) %> 
+<% } %> 
+<a href="/logout">logout</a>
